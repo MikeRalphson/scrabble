@@ -1,0 +1,1 @@
+# Help for playing seven and eight letter words in scrabble
