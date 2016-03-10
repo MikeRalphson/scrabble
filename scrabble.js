@@ -57,6 +57,24 @@ if (process.argv.length>2) {
 	for (var i=wordLookup.length;i<9;i++) {
 		addLetters(wordLookup,wordLookup,i,'');
 	}
+	
+	// check 6 letter words8
+	var first = false;
+	for (var i=0;i<wordLookup.length;i++) {
+		var s = wordLookup;
+		s = s.substring(0,i)+s.substring(i+1);
+		for (var j=0;j<lookup.length;j++) {
+			if ((lookup[j] == s) && (seen.indexOf(input[j])<0)) {
+				if (first) {
+					console.log('------');
+					first = false;
+				}
+				console.log(input[j]);
+				seen.push(input[j]);
+			}
+		}
+		addLetters(s,s,7,'');
+	}
 
 }
 else {

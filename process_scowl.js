@@ -34,7 +34,7 @@ if (process.argv.length>2) {
 		input.remove(0,1);
 	}
 	
-	input = tidy(input,7,limit);
+	input = tidy(input,6,limit);
 	console.log('Number of candidate words: '+input.length);
 	
 	var lookup = [];

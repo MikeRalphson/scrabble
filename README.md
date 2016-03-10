@@ -1,4 +1,4 @@
-## Help for playing seven and eight letter words in scrabble
+## Help for playing six, seven and eight letter words in scrabble
 
 Example output:
 
